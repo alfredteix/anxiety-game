@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Game</title>
+    <style>
+        body { text-align: center; }
+        canvas { display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <h1>Anxiety Game</h1>
+    <div id="input-container">
+        <label for="anxiety-input">What are you anxious about?</label>
+        <input type="text" id="anxiety-input">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="game-container" style="display:none;">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="quote-container" style="display:none;">
+        <p id="motivational-quote"></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
